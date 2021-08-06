@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react"
+import Error from "./Error"
 
 const Pregunta = () => {
     //definir el State
@@ -26,6 +27,7 @@ const Pregunta = () => {
     return (
         <Fragment>
             <h2>Set your Badget</h2>
+            {error ? <Error mensaje="Try again!" /> : null}
             <form onSubmit={agregarPresupuesto}>
                 <input
                     type="number"
