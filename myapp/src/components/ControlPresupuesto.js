@@ -16,7 +16,7 @@ const ControlPresupuesto = ({ presupuesto, restante }) => {
 
 ControlPresupuesto.propTypes = {
     presupuesto: PropTypes.number.isRequired,
-    resatnte: PropTypes.number.isRequired,
+    restante: PropTypes.number.isRequired,
 }
 
 export default ControlPresupuesto
