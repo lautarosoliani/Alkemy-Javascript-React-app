@@ -4,6 +4,7 @@ import Formulario from "./components/Formulario"
 import Listado from "./components/Listado"
 import ControlPresupuesto from "./components/ControlPresupuesto"
 
+
 function App() {
     //definir state
     const [presupuesto, guardarPresupuesto] = useState(0)
@@ -51,11 +52,13 @@ function App() {
                                 />
                             </div>
                             <div className="one-half column">
+
                                 <Listado gastos={gastos} />
                                 <ControlPresupuesto
                                     presupuesto={presupuesto}
                                     restante={restante}
                                 ></ControlPresupuesto>
+
                             </div>
                         </div>
                     )}
