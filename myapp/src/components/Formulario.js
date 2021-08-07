@@ -1,15 +1,21 @@
 import React, { useState } from "react"
+import Error from "./Error"
 
 const Formulario = () => {
     const [nombre, guardarNombre] = useState("")
     const [cantidad, guardarCantidad] = useState(0)
+    const [error, guardarError] = useState(false)
 
     //cuando el usuario agrega un gasto
     const agregarGasto = (e) => {
         e.preventDefault()
 
         //validar
-
+        if (cantidad < 1 || isNaN(cantidad) || nombre.trim() === "") {
+            guardarError(true)
+            return
+        }
+        guardarError(false)
         //construir el gasto
 
         //pasar el gasto al componente principal
@@ -20,7 +26,7 @@ const Formulario = () => {
     return (
         <form onSubmit={agregarGasto}>
             <h2>Add your expenses here</h2>
-
+            {error ? <Error mensaje="Error" /> : null}
             <div className="campo">
                 <label>Expense Name</label>
                 <input
