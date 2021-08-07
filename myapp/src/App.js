@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Pregunta from "./components/Pregunta"
 import Formulario from "./components/Formulario"
 import Listado from "./components/Listado"
+import ControlPresupuestario from "./components/ControlPresupuestario"
 
 function App() {
     //definir state
@@ -36,7 +37,11 @@ function App() {
                                 />
                             </div>
                             <div className="one-half column">
-                                <Listado gastos={gastos} />
+                                <Listado> gastos={gastos} </Listado>
+                                <ControlPresupuestario
+                                    presupuesto={presupuesto}
+                                    restante={restante}
+                                ></ControlPresupuestario>
                             </div>
                         </div>
                     )}
