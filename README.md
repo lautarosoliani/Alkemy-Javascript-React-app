@@ -1,4 +1,4 @@
-# alkemy-javascript-CRUD
+# alkemy-javascript-project
 
 
 <h1>📌Preview</h1>
@@ -7,3 +7,4 @@
 
 <br>
 <h1>📌Deployment link</h1>
+https://alkemy-javascript-project.netlify.app/
