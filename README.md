@@ -1,4 +1,4 @@
-# alkemy-javascript-project
+# Alkemy-Javascript-React-app
 
 
 <h1>📌Preview</h1>
