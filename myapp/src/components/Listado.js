@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 const Listado = ({ gastos }) => (
     <div className="gastos-realizados">
-        <h2>Listado</h2>
+        <h2>Your expenses</h2>
         {gastos.map((gasto) => (
             <Gasto key={gasto.id} gasto={gasto} />
         ))}
