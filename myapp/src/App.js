@@ -10,6 +10,11 @@ function App() {
     //--> para mostrar 'set your badget' al principio
     //--> y luego, para ocultarlo y mostrar 'Add your expenses here'
     const [mostrarpregunta, actualizarPregunta] = useState(true)
+    const [gastos, guardarGastos] = useState([])
+
+    const agregarNuevoGasto = (gasto) => {
+        guardarGastos([...gastos, gasto])
+    }
 
     return (
         <div className="container">
@@ -25,7 +30,9 @@ function App() {
                     ) : (
                         <div className="row">
                             <div className="one-half column">
-                                <Formulario />
+                                <Formulario
+                                    agregarNuevoGasto={agregarNuevoGasto}
+                                />
                             </div>
                             <div className="one-half column">2</div>
                         </div>
