@@ -27,7 +27,6 @@ const Formulario = ({ agregarNuevoGasto }) => {
 
         //pasar el gasto al componente principal
         agregarNuevoGasto(gasto)
-
         //resetear el form
         guardarNombre("")
         guardarCantidad(0)
