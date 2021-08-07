@@ -29,7 +29,7 @@ function App() {
             //y cuando termina que se resetee a 'false'
             guardarCrearGasto(false)
         }
-    }, [gasto])
+    }, [gasto, creargasto, gastos, restante])
 
     return (
         <div className="container">
